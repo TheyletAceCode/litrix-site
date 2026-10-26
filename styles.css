@@ -1,0 +1,135 @@
+/* Litrix Technologies site. Dark header and hero, light body, brand colors from the brand board. */
+:root {
+  --ink: #0B0F14;
+  --ink-2: #161B22;
+  --line-dark: #30363D;
+  --on-dark: #E6EDF3;
+  --on-dark-muted: #9DA7B3;
+  --electric: #3B82F6;
+  --cobalt: #1E40AF;
+  --orange: #F97316;
+  --orange-text: #C2410C;
+  --gold: #FBBF24;
+  --paper: #FFFFFF;
+  --paper-2: #F8FAFC;
+  --line: #E5E7EB;
+  --text: #1F2937;
+  --text-muted: #4B5563;
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --body: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+a { color: var(--cobalt); }
+a:hover { color: #1E3A8A; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance; color: var(--ink); }
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+/* Header */
+.dark { background: var(--ink); color: var(--on-dark); }
+.site-header .wrap {
+  display: flex; flex-wrap: wrap; gap: 12px 24px;
+  align-items: center; justify-content: space-between;
+  padding-block: 18px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--on-dark); }
+.brand:hover { color: var(--on-dark); }
+.brand-name { display: flex; flex-direction: column; gap: 2px; }
+.brand-name strong { font-family: var(--display); font-size: 22px; line-height: 1; letter-spacing: 0.5px; }
+.brand-name small { font-size: 10px; font-weight: 600; letter-spacing: 3px; color: var(--on-dark-muted); }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; font-size: 15px; }
+.nav a { color: #C9D1D9; text-decoration: none; }
+.nav a:hover { color: #FFFFFF; }
+.call-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 16px; border-radius: 10px;
+  border: 1px solid var(--line-dark); font-weight: 600;
+}
+.nav a.call-btn { color: #F0F6FC; }
+
+/* Hero */
+.hero { padding-block: 56px 80px; }
+.eyebrow { margin: 0 0 14px; font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--electric); }
+.hero h1 { margin: 0; max-width: 820px; font-size: clamp(38px, 6vw, 64px); color: #F0F6FC; }
+.tagline { margin: 18px 0 0; font-family: var(--display); font-size: 24px; font-weight: 500; color: var(--gold); }
+.lede { margin: 18px 0 0; max-width: 620px; font-size: 20px; color: #C9D1D9; }
+.actions { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; }
+.btn {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px;
+  border-radius: 10px; font-weight: 600; text-decoration: none;
+}
+.btn-primary { background: var(--orange); color: var(--ink); }
+.btn-primary:hover { background: #FB923C; color: var(--ink); }
+.btn-ghost { border: 1px solid var(--line-dark); color: var(--on-dark); }
+.btn-ghost:hover { color: #FFFFFF; border-color: var(--on-dark-muted); }
+
+/* Sections */
+.section { padding-block: 72px; }
+.section.alt { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section h2 { margin: 0 0 12px; font-size: 34px; }
+.intro { margin: 0 0 36px; max-width: 660px; color: var(--text-muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+.card { padding: 28px; border-radius: 14px; background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card.featured { border: 2px solid var(--cobalt); }
+.card h3 { margin: 0; font-size: 20px; }
+.card p { margin: 0; color: var(--text-muted); }
+.card ul { margin: 0; padding-left: 20px; color: var(--text-muted); }
+.price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.price strong { font-family: var(--display); font-size: 42px; color: var(--ink); line-height: 1.1; }
+.price s, .price span { color: var(--text-muted); }
+.note { margin: 28px 0 0; font-size: 15px; color: var(--text-muted); max-width: 760px; }
+.services .card { background: var(--paper-2); }
+
+.steps { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.steps li { display: flex; flex-direction: column; gap: 6px; }
+.steps .num { font-family: var(--display); font-size: 38px; font-weight: 700; color: var(--orange-text); line-height: 1; }
+.steps strong { font-size: 19px; color: var(--ink); }
+.steps span { color: var(--text-muted); }
+
+/* Contact */
+.contact { padding-block: 72px; }
+.contact h2 { margin: 0 0 12px; font-size: 34px; color: #F0F6FC; }
+.contact p { margin: 0 0 12px; color: #C9D1D9; max-width: 640px; }
+.phone-big { font-family: var(--display); font-size: clamp(30px, 5vw, 44px); font-weight: 700; color: #FFFFFF; text-decoration: none; }
+.phone-big:hover { color: var(--gold); }
+
+/* Footer */
+.site-footer .wrap {
+  display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between;
+  padding-block: 28px; border-top: 1px solid #21262D; font-size: 14px; color: var(--on-dark-muted);
+}
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.site-footer a { color: var(--on-dark-muted); }
+.site-footer a:hover { color: #FFFFFF; }
+
+/* Policy pages */
+.policy { padding-block: 56px 72px; }
+.policy .wrap > * { max-width: 760px; }
+.policy h1 { margin: 0 0 6px; font-size: clamp(32px, 5vw, 44px); }
+.policy h2 { margin: 36px 0 8px; font-size: 22px; }
+.policy .updated { margin: 0 0 28px; color: var(--text-muted); font-size: 15px; }
+.policy p, .policy li { color: #374151; }
+.policy ul { padding-left: 22px; }
+
+@media (max-width: 560px) {
+  .nav .hide-sm { display: none; }
+  .hero { padding-block: 40px 60px; }
+  .section, .contact { padding-block: 56px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
