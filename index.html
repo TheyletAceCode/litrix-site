@@ -104,9 +104,24 @@
 <section id="contact" class="dark">
 <div class="wrap contact">
 <h2>Get a free site review</h2>
-<p>Call or text us about your business. We'll reply within one business day with two or three specific ideas for your site.</p>
+<p>Call, text or send a message about your business. We'll reply within one business day with two or three specific ideas for your site.</p>
 <p><a class="phone-big" href="tel:+14706326701">(470) 632-6701</a></p>
 <p>Calls and texts welcome. Based in Snellville, Georgia.</p>
+<form class="inquiry" action="https://studio.litrixstudio.com/inquiry" method="post" aria-labelledby="inquiry-title">
+<h3 id="inquiry-title">Or send a message</h3>
+<div class="field-row">
+<label>Your name<input name="name" autocomplete="name" required maxlength="120"></label>
+<label>Email<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+</div>
+<div class="field-row">
+<label><span>Phone <span class="optional">(optional)</span></span><input name="phone" type="tel" autocomplete="tel" maxlength="40" pattern="[0-9+().\s\-]*"></label>
+<label><span>Business name <span class="optional">(optional)</span></span><input name="business" autocomplete="organization" maxlength="160"></label>
+</div>
+<label>How can we help?<textarea name="message" rows="5" required maxlength="4000"></textarea></label>
+<div class="hp" aria-hidden="true"><label>Leave this empty<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
+<p class="form-note">We use your details only to reply to you. See our <a href="privacy.html">privacy policy</a>.</p>
+<button class="btn btn-primary" type="submit">Send message</button>
+</form>
 </div>
 </section>
 

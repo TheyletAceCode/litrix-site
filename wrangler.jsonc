@@ -1,0 +1,16 @@
+// Serves this static site from Cloudflare (Workers static assets, free plan) at litrixstudio.com.
+// Deploy from the PC: corepack pnpm dlx wrangler@4 deploy   (see README.md)
+{
+  "name": "litrix-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "litrixstudio.com", "custom_domain": true },
+    { "pattern": "www.litrixstudio.com", "custom_domain": true }
+  ],
+  "workers_dev": true
+}
