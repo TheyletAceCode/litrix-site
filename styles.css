@@ -108,6 +108,22 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance;
 .contact p { margin: 0 0 12px; color: #C9D1D9; max-width: 640px; }
 .phone-big { font-family: var(--display); font-size: clamp(30px, 5vw, 44px); font-weight: 700; color: #FFFFFF; text-decoration: none; }
 .phone-big:hover { color: var(--gold); }
+.inquiry { margin-top: 36px; max-width: 720px; display: flex; flex-direction: column; gap: 16px; }
+.inquiry h3 { margin: 0; font-size: 22px; color: #F0F6FC; }
+.inquiry label { display: flex; flex-direction: column; gap: 6px; min-width: 0; font-weight: 600; color: #E6EDF3; }
+.field-row label { flex: 1 1 260px; }
+.inquiry .optional { font-weight: 400; color: var(--on-dark-muted); }
+.inquiry input, .inquiry textarea {
+  font: inherit; color: var(--ink); background: #FFFFFF; border: 1px solid var(--line-dark);
+  border-radius: 10px; min-height: 48px; padding: 10px 14px; width: 100%;
+}
+.inquiry textarea { resize: vertical; }
+.inquiry input:focus-visible, .inquiry textarea:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.field-row { display: flex; flex-wrap: wrap; gap: 16px; }
+.inquiry .form-note { margin: 0; font-size: 15px; color: var(--on-dark-muted); }
+.inquiry .form-note a { color: #FFFFFF; }
+.inquiry .btn { align-self: flex-start; border: 0; cursor: pointer; font-size: 17px; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
 /* Footer */
 .site-footer .wrap {
