@@ -196,23 +196,43 @@ work = f'''<section class="page-hero">
 <div class="wrap">
 {eyebrow("Our work")}
 <h1>Work we're <em>proud of.</em></h1>
-<p class="lede">We are a new studio, and we only show real projects, with the client's permission, once they are live.</p>
+<p class="lede">Real, live websites we have built. Visit any of them to see it working.</p>
 </div>
 </section>
 <section class="section">
 <div class="wrap">
-<div class="empty">
-<h2>Our first projects are on the way</h2>
-<p>Client websites are in progress now. Each one will appear here as a short story: the business, what they needed, what we built, and how it's going.</p>
+<article class="project">
+<div class="project-shots">
+<img class="shot-desktop" src="/images/work/props-desktop.jpg" width="1440" height="820" alt="The PROPS home page on a computer: a dark hero with gold lettering reading Give PROPS, Gain Insight, Grow Together, a launch countdown and the PROPS logo in a ring." loading="lazy" decoding="async">
+<img class="shot-phone" src="/images/work/props-phone.jpg" width="780" height="1560" alt="The same PROPS home page on a phone." loading="lazy" decoding="async">
+</div>
+<div class="project-body">
+<span class="tag">Launch website</span>
+<h2>PROPS by Janessie James</h2>
+<p>A launch website for PROPS, a shared social experience for groups of 5 to 12 people where everyone gives recognition and everyone receives it.</p>
+<ul class="checks">
+<li>A live countdown to the launch date</li>
+<li>A launch-list sign-up and a contact page</li>
+<li>Pages that explain what PROPS is, who it's for, and answer common questions</li>
+<li>Works on phones, tablets and computers</li>
+</ul>
 <div class="actions">
-<a class="btn btn-primary" href="/contact">Be one of our first clients {ARROW}</a>
+<a class="btn btn-ghost" href="https://janessieprops.netlify.app/" target="_blank" rel="noopener noreferrer">Visit the live site {ARROW}<span class="sr-only"> (opens in a new tab)</span></a>
+</div>
+</div>
+</article>
+<div class="empty more-work">
+<h2>More projects are on the way</h2>
+<p>New client websites appear here once they are live and the client is happy to share them.</p>
+<div class="actions">
+<a class="btn btn-primary" href="/contact">Start your project {ARROW}</a>
 <a class="btn btn-ghost" href="/pricing">See founding prices {RIGHT}</a>
 </div>
 </div>
 </div>
 </section>
 {CTA_BAND}'''
-page('work.html', 'Our Work | Litrix Technologies', 'Projects by Litrix Technologies. Real client work appears here once it is live and shared with permission.', '/work', work)
+page('work.html', 'Our Work | Litrix Technologies', 'Websites built by Litrix Technologies, including the PROPS by Janessie James launch site.', '/work', work)
 
 # ---------- About ----------
 about = f'''<section class="page-hero">
