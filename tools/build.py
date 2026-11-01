@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from content import *
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-LOGO = '''<svg class="mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 33 L19 7 L23 15 L15 33 Z" fill="#FF603B"/><path d="M15 33 H34 L30 27 H18 Z" fill="#FF603B"/></svg>'''
+LOGO = '''<svg class="mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 7 H13.5 L35 33 H26.5 Z" fill="#FF603B"/><path d="M26.5 7 H35 L25.2 18.9 L21 13.8 Z" fill="#FF603B"/><path d="M17.2 18.4 L21.4 23.5 L17.5 28.2 H24 L21.6 33 H5 Z" fill="#FF603B"/></svg>'''
 
 NAV = [('/', 'Home'), ('/services', 'Services'), ('/work', 'Our Work'), ('/about', 'About'), ('/pricing', 'Pricing'), ('/contact', 'Contact')]
 
